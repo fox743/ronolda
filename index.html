@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronaldo</title>
+    <style>
+        body {
+            background: url(./img/stadion.avif) center / cover;
+
+        }
+
+        .ronaldo {
+            background-image: url(./img/Ronolda\ Shoot.png);
+            width: 300px;
+            height: 400px;
+            background-size: cover;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 150px;
+            transition: .4s;
+            transform: rotateZ(0);
+            filter: drop-shadow(2px 2px 8px);
+        }
+
+        .ronaldo:hover {
+            transform: rotateZ(-20deg);
+        }
+
+        .top {
+            background-image: url(./img/top.png);
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            bottom: 20;
+            left: 130px;
+            margin-top: 350px;
+            margin-left: 200px;
+            position: absolute;
+            transition: 3s;
+            transform: translate(0 0);
+        }
+
+        .top:hover {
+            transform: translate(1400px, -290px);
+        }
+
+
+        .qapi {
+            width: 700px;
+            height: 450px;
+            transition: .4s;
+            background-size: cover;
+            position: absolute;
+            margin-left: 1200px;
+            margin-top: 50px;
+            background-image: url(./img/qapi.png);
+            z-index: 2;
+            bottom: 25;
+            right: 0;
+        }
+
+        .buffon {
+            width: 150px;
+            height: 250px;
+            transition: .4s;
+            background-size: cover;
+            position: absolute;
+            margin-left: 1100px;
+            margin-top: 150px;
+            transform: rotate(10deg);
+            transition: 1s;
+            background-image: url(./img/buffon22.png);
+            filter: drop-shadow(2px 2px 8px);
+            z-index: 3;
+        }
+
+        .box1 {
+            font-size: 70px;
+            width: 190px;
+            align-items: center;
+            line-height: 150px;
+            color: transparent;
+        }
+
+        .top:hover~.box1 {
+            position: absolute;
+            left: 600px;
+            bottom: 250px;
+            color: white;
+            transition: 3s;
+        }
+
+        .top:hover~.buffon {
+            transform: translate(-30px, 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ronaldo"></div>
+    <div class="qapi"></div>
+    <div class="top"></div>
+    <div class="buffon"></div>
+    <div class="box1">Goal</div>
+</body>
+
+</html>
